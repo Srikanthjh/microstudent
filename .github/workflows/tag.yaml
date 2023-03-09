@@ -18,4 +18,6 @@ jobs:
         uses: Srikanthjh/jenkinsgit@2.0.0.8
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO_OWNER: ${{ github.repository_owner }}
+          REPO_NAME: ${{ github.repository }}
        
